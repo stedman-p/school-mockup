@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles.css">
-    <script src="/script.js"></script> 
+    <script src="/script.js" defer></script> 
     <title>Schedule Picker</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Record schedule preferences</h1>
     <form action="/user" method="post">
+        <h2>Record schedule preferences</h2>
         <ul>
             <li>
-                <label for="name">First name:</label>
+                <label for="name">First Name:</label>
                 <input type="text" id="first-name" name="first_name">
             </li>
             <li>
                 <label for="last-name">Last Name:</label>
                 <input type="text" id="last-name" name="last_name">
+            </li>
+            <li class="button">
+                <button type="button">Send your message</button>
             </li>
         </ul>
     </form>
